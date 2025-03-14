@@ -1,0 +1,114 @@
+:root{
+
+    --primary-color-Soft-blue:hsl(215, 51%, 70%);
+    --primary-color-Cyan:hsl(178, 100%, 50%);
+    --color-main:hsl(217, 54%, 11%);
+    --neutral-color-card-bg:hsl(216, 50%, 16%);
+    --neutral-color-line:hsl(215, 32%, 27%);
+
+     /** Font Size**/
+
+     --fs-init:1rem;
+     --fs-ok:1.5rem;
+     --fs-med:2rem;
+     --fs-big:2.5rem;
+
+     --fw-light:400;
+     --fw-semi-bold:500;
+     --fw-bold:800;
+     --fw-black:900;
+
+
+     --padding-init:1.5rem;
+    --padding-ok:2rem;
+    --padding-med:2.5rem;
+
+
+    /* Border Radius */
+    --br-very-small:0.2rem;
+    --br-init:0.5rem;
+    --br-ok:1rem;
+    --br-med:1.5em;
+
+    --br-circle:50%;
+
+    /* Gaps */
+    --gap-init:1rem;
+    --gap-ok:1.5rem;
+      /* Widths*/
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(217, 54%, 11%);
+    font-family: Outfit;
+}
+h3{
+    color: white;
+}
+p{
+    color: var(--primary-color-Soft-blue);
+}
+section{
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
+.container{
+    background-color: var(--neutral-color-card-bg);
+    
+    padding: 1rem;
+    max-width: fit-content;
+    border-radius: 8px;
+}
+.img-div{
+    
+    max-width: 400px;
+    border-radius: 8px;
+    display: flex;
+}
+.main-image{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.text-div,.profile-div{
+   
+    max-width: 400px;
+}
+.text-div{
+    max-width: 400px;
+    padding: 1rem;
+}
+.data-div{
+    
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+
+}
+.inner-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.profile-image{
+    width: 100%;
+}
+.profile-holder{
+    max-width: 50px;
+    border: var(--primary-color-Soft-blue) 1px solid ;
+    border-radius: var(--br-circle);
+    display: flex;
+}
+.profile-sec{
+    border-top:1px solid var(--neutral-color-line) ;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    max-width: 400px;
+}
